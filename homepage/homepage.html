@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="homepage_style.css" type="text/css">
   </head>
   <body>
-    <h1>Homepage</h1>
+      <nav>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#profile">My Profile</a>
+        <input type="text" placeholder="Search">
+    </nav>
+    <header>
+        <h1>Homepage</h1>    
+    </header>
+    <form>
+        <label for="exampleMessage">Create a Post</label>
+        <br><textarea class="u-full-width" placeholder="What's on your mind?" id="exampleMessage"></textarea></br>
+        <input class="button-primary" type="submit" value="Post">
+    </form>
   </body>
-<form>
-  <label for="exampleMessage">Message</label>
-  <textarea class="u-full-width" placeholder="What's on your mind?" id="exampleMessage"></textarea>
-  <input class="button-primary" type="submit" value="Submit">
-</form>
-
-<!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-
-<!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
 </html>
