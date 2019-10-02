@@ -1,11 +1,12 @@
+
 header {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-nav {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 54%;}
+nav {margin-left: 54%;}
 
 form {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 20em;}
 
+body  {background-color: #F9F8F8}
 ::placeholder {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
