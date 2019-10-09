@@ -29,8 +29,19 @@
          confirm_password.setCustomValidity('');
         }
     }
+
+    password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
             </script>
     </head>
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+              <h1>Sign Up</h1>
+              <p>It's easy and simple, and your pet will like it!</p>
+              <hr>
+
+
 
     <body>
    
