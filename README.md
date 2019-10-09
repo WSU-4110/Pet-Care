@@ -1,2 +1,2 @@
-# PetCare
-A social media website for pet owners.
+# Pet-Care
+Social media website for pet owners.
