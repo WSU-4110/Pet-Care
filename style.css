@@ -2,23 +2,25 @@ html{
     font-family: sans-serif;
 }
 
+/*---------------------------------------------
+            Header Styling
+----------------------------------------------*/
 .main-nav li{
     box-sizing: border-box;
     display: inline;
     padding: 20px;
 }
 
-
-
-
-
 /*---------------------------------------------
             Footer Styling
 ----------------------------------------------*/
 
 footer {
+    
     background-color: #3b3b3b;
-    color: #f1fffb;    
+    color: #f1fffb;  
+    padding: 30px;
+    
 }
 
 .social-icons li{
@@ -27,7 +29,6 @@ footer {
     float: right;
     padding-left: 25px;
 }
-
 
 .footer-class ul{
     margin-right: 25px;
