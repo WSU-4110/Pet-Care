@@ -134,8 +134,11 @@ html {
     margin-right: 25px;
 }
 
-.footer-class-lost&found ul {
-    margin-top: 20px;
+.footer-class-lost&found ul{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
 }
 
 /*--------------End of footer -----------------------*/
