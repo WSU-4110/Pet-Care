@@ -1,7 +1,4 @@
 # Pet-Care
-<<<<<<< HEAD
-Social media website for pet owners.
-=======
 
-login Page
->>>>>>> mahir
+Social media website for pet owners.
+
