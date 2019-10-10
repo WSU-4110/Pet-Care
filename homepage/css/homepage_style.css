@@ -1,3 +1,35 @@
 
 div {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 body  {background-color: #F9F8F8}
+div.post {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 5px 5px;
+  }
+
+
+  .footer-class {
+
+    background-color: #3b3b3b;
+    color: #f1fffb;
+    padding: 20px;
+    margin: 0px 0px;
+
+}
+
+.social-icons li {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    padding-left: 25px;
+}
+
+.footer-class ul {
+    margin-right: 25px;
+}
