@@ -1,4 +1,38 @@
 
+.tittle-header {
+    color: #387245;
+}
+
+.main-nav li {
+
+    list-style: none;
+}
+
+.header-class {
+    position: fixed;
+    height: 100%;
+    width: 18%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#78e08f, rgba(6, 69, 20, 0.99));
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.contents {
+    margin-left: 18%;
+    padding: 0px 10px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav li a:hover {
+    color: #fff;
+}
 div {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 body  {background-color: #F9F8F8}
 
