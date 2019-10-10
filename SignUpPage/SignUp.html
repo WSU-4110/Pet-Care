@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- 
+    ==============================================
+    CSC 4111
+    
+    PetCare Sprint 1: Sign Up
+    Date: 10/08/2019
+    Author: Hassan Bachir
+    =================================================== 
+-->
+
+<!-- 
+    ==========================
+    Beginning of HTML file
+    ==========================
+-->
+<html> 
+
+    <head>
+            <link rel="stylesheet" type="text/css" href="test1.css">
+            <script>
+            var password = document.getElementById("psw")
+              , confirm_password = document.getElementById("psw-repeat");
+            
+              function validatePassword(){
+        if(password.value != confirm_password.value) {
+         confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+         confirm_password.setCustomValidity('');
+        }
+    }
+
+    password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+            </script>
+    </head>
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+              <h1>Sign Up</h1>
+              <p>It's easy and simple, and your pet will like it!</p>
+              <hr>
+
+              <label for="firstName"><b>Frist Name</b></label>
+              <input type="text" placeholder="First Name" name="firstName" required>
+            
+
+              <label for="lastName"><b>Last Name</b></label>
+            <input type="text" placeholder="Last Name" name="lastName" required>
+    
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+    
+            <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id = "psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+                
+      <label for=birthday><b>Date of Birth</b></label> 
+      <input type="date" name="bday">
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+  
+      <p>By creating an account you agree to our <a href="TermsOfService.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="reset" class="cancelbtn">Reset</button>
+            
+          </div>
+        </div>
+      </form>
+  
+    <!-- 
+        ==========================
+        End of Body
+        ==========================
+     -->
+</html>
+    <!-- 
+        ==========================
+        end of HTML file 
+        ==========================
+    -->
