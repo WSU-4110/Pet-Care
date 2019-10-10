@@ -23,7 +23,7 @@
 </head>
 
 <body>
-     <!--==========================
+    <!--==========================
                 Header
     ===========================-->
     <div class="header-class">
@@ -44,6 +44,72 @@
         </header>
     </div>
 
+    <!--===================
+        Section 
+    ==========================-->
+    <div class="contents">
+        <h2 class="tittle-header">Lost And Found</h2>
+
+
+        <!--===================
+        User Form
+    ==========================-->
+        <form method="get" enctype="application/x-www-form-urlencoded" action="http://www.tipjar.com/cgi-bin/test">
+
+            <label class="level-design">First name:</label>
+            <input class="input-class" type="text" name="txtFirstName">
+            <br><br>
+
+            <label class="level-design">Last name:</label>
+            <input class="input-class" type="text" name="txtLastName">
+            <br><br>
+
+            <label class="level-design">Your Email:</label>
+            <input class="input-class" type="email">
+            <br><br>
+
+            <label class="level-design">Your Phone Number:</label>
+            <input class="input-class" type="number">
+            <br><br>
+
+            <label class="level-design">Last Seen:</label>
+            <input class="input-class" type="date">
+            <br><br>
+
+            <label class="level-design">Pet Type:</label>
+            <select name="petType">
+                <option value="D">Dog</option>
+                <option value="C">Cat</option>
+                <option value="B">Bird</option>
+            </select>
+            <br><br>
+
+            <label class="level-design">Picture of Your Pet: </label>
+            <input class="input-class" type="file" name="inputFile">
+            <br><br>
+
+            <div class="btn">
+                <input class="submit-btn" type="submit" value="Submit">
+                <input class="reset-btn" type="reset" value="Reset">
+                <br><br>
+            </div>
+        </form>
+        <!--==========================
+                footer
+    ===========================-->
+        <footer class="footer-class footer-class-lost&found">
+            <ul class="social-icons"> Follow us
+                <li><img src="Images/fb_icon.png" alt="facebook icon"></li>
+                <li><img src="Images/google-plus.png" alt="google plus icon"></li>
+                <li><img src="Images/insta.png" alt="Instragram icon"></li>
+                <li><img src="Images/linked-in.png" alt="linked-in icon"></li>
+                <li><img src="Images/twitter.png" alt="Twitter icon"></li>
+                <li><img src="Images/youTube.png" alt="YouTube icon"></li>
+            </ul>
+        </footer>
+
+
+    </div>
 </body>
 
 </html>
