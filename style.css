@@ -168,11 +168,23 @@ html {
     border-radius: 20%;
 }
 
-
-
 .submit-btn {
     background-color: #beffb9;
     color: black;
     font-weight: bold;
+}
+
+.submit-btn:hover{
     
+    background-color: green;
+}
+
+.reset-btn{
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+}
+
+.reset-btn:hover{
+    background-color: red;
 }
