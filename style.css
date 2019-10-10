@@ -1,35 +1,134 @@
-html{
-    font-family: sans-serif;
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.clearfix{zoom: 1;}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /*---------------------------------------------
             Header Styling
 ----------------------------------------------*/
-.main-nav li{
-    box-sizing: border-box;
-    display: inline;
-    padding: 20px;
+
+.tittle-header {
+    color: #387245;
+}
+
+.main-nav li {
+
+    list-style: none;
+}
+
+.header-class {
+    position: fixed;
+    height: 100%;
+    width: 18%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#78e08f, rgba(6, 69, 20, 0.99));
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.contents {
+    margin-left: 18%;
+    padding: 0px 10px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav li a:hover {
+    color: #fff;
+}
+
+/*---------------------------------------------
+            Park Pictures
+----------------------------------------------*/
+.pet-park-photos{
+    padding: 0;
+}
+
+.photo-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.photo-showcase li{
+    display: inline-block;
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+
+.park-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.park-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.park-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*---------------------------------------------
+            Park Names Styling
+----------------------------------------------*/
+.park-name-header {
+    font-weight: 300;
+    color: green;
+}
+
+.main-container {
+    width: 70%;
+}
+
+.aside-park-names ol li {
+    text-align: justify;
+    font-weight: 300;
 }
 
 /*---------------------------------------------
             Footer Styling
 ----------------------------------------------*/
 
-footer {
-    
+.footer-class {
+
     background-color: #3b3b3b;
-    color: #f1fffb;  
-    padding: 30px;
-    
+    color: #f1fffb;
+    padding: 20px;
+    margin: 0px 0px;
+
 }
 
-.social-icons li{
+.social-icons li {
     list-style: none;
     display: inline-block;
     float: right;
     padding-left: 25px;
 }
 
-.footer-class ul{
+.footer-class ul {
     margin-right: 25px;
 }
+
+/*--------------End of footer -----------------------*/
