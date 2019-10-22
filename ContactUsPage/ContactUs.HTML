@@ -19,10 +19,13 @@
 <html> 
 
     <head>
+            <meta name ="viewport" content="width=device-width, initial-scale =1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
             <meta name="author" content="Laith Rafidi" />
             <meta name="description" content="Contact US" />
             <meta http-equiv="Expires" content="-1">
+            <title> Contact US | PetCare</title>
             <!-- 
                 ==========================
                 Links to other pages
@@ -54,7 +57,7 @@
                                 <li>About Us</li>
                                 <li>Sign Up</li>
                                 <li>Profile</li>
-                            </ul>
+                             </ul>
                         </nav>
                 </header>
                 <h3>Contact Form</h3>
@@ -134,3 +137,60 @@
         end of HTML file 
         ==========================
     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <!--
+            &  ChosenMonth_Source_PrimaryServices.Selected.Value
+    187	51
+    411	40
+    .
+    _________________________________________
+
+    PercentageFieldValidation_Group
+    If
+        NumOfAttended_ / NumOfEmp_ * 100 > 100
+    Then
+        PercentageError 	Visible True
+        Submit_Group 		Visible False
+
+    _________________________________________
+
+    EmptyMonthSource_Group
+    If
+        isBlank(ChosenMonth_Source_Group.Selected.Value)
+    Then
+        Submit_Group		Visible False
+    __________________________________________
+
+    EmptyFields_Group
+    If 
+        IsBlank(NumOfPercentage_Group_txt) || IsBlank(NumOfEmp_Group_txt) || 	IsBlank(NumOfAttended_Group_txt)
+    Then
+        Submit_Group		Visible False
+        -->
