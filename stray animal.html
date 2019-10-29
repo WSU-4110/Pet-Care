@@ -4,64 +4,127 @@
     <meta charset="UTF-8">
     <title>Document</title>
     
+    <link rel="stylesheet" type="text/css" href="stray%20animal.css" />
 </head>
+ <div class="header-class">
+        <header>
+               <img src="pet%20logo.png" alt="petcare logo">
+            <nav class="nav">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li><br>
+                    <li><a href="PetParks.html">Pet Parks</a></li><br>
+                    <li><a href="lostAndfound.html">Lost and Found</a></li><br>
+                    <li><a href="#">About Us</a></li> &nbsp;
+                    
+                      <li><a 
+                href="stray%20animal.html">Stray Animals</a></li><br>
+                   
+                    <br>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    
+
 <body>
      
- <h1> Pet Care</h1>
-  <div class "logo">
-        <img src="Images/petcare-logo.png" alt="Pet Care icon">
-                    </div>
-                  
-     <nav class="nav main-nav">
-                 <ul>
-                <li>Home</li>
-               <li>Lost and Found</li>
-             <li>About Us</li>
-               <li>Sign Up</li>
-            <li>Profile</li>
-                 </ul>
-             </nav>
-               
-                </header>
-                
-                <h3> Stray Animal </h3>
 
-      
-      <div class="row">
-      <div class="col-25">
-        <label for="fname">First Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="What is your first name ">
-      </div>
-    </div>
+ 
+       
+         
+          <nav>
+            
+           
+      </header> 
+                
+
+    <header>
     
-     <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="What is your last name ">
-      </div>
-    </div>
-      <div class="row">
-      <div class="col-25">
-        <label for="subject"> What did you find the animal </label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Location" style="height:40px"></textarea>
-      </div>
-    </div>
     
-       <div class="row">
-      <div class="col-25">
-        <label for="subject"> Health Condition of the Animal </label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Condition" style="height:40px"></textarea>
-      </div>
+    
+    <link rel="stylesheet" type="text/css" href="test%20form%20.css" />
+  </header>
+   <h1> Informations </h1>
+   
+   
+  <div>
+    <label class="desc" id="title1" for="Field1">Full Name</label>
+    <div>
+      <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
     </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title3" for="Field3">
+      Email
+    </label>
+    <div>
+      <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+   </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title4" for="Field4">
+      Message
+    </label>
   
+    <div>
+      <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
     
+  <div>
+  
+     <fieldset>
+    <h4> What kind  of animal is this ? </h4>
+      <legend id="title5" class="desc">
+        
+      </legend>
+      
+      <div>
+      	<input id="radioDefault_5" name="Field5" type="hidden" value="">
+      	<div>
+      		<input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+      		
+      		<label class="choice" for="Field5_0">Cat</label>
+      	</div>
+        <div>
+        	<input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+        	<label class="choice" for="Field5_1">Dog</label>
+        </div>
+        <div>
+        	<input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+        	<label class="choice" for="Field5_2">Others</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+    
+     <fieldset>
+    <h4> Condition of the Animal ? </h4>
+      <legend id="title5" class="desc">
+        
+      </legend>
+      
+      <div>
+      	<input id="radioDefault_5" name="Field5" type="hidden" value="">
+      	<div>
+      		<input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+      		
+      		<label class="choice" for="Field5_0">Healthy</label>
+      	</div>
+        <div>
+        	<input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+        	<label class="choice" for="Field5_1">Sick</label>
+        </div>
+        <div>
+        	<input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+        	<label class="choice" for="Field5_2">Not Sure</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  
 </body>
 </html>
