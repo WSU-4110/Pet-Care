@@ -56,3 +56,22 @@ img {margin-bottom: -8px;}
   .button:hover {
     background-color: goldenrod;
   }
+
+  .Center-Container { 
+    height: 150px;
+    position: relative;
+    border: 3px solid green; 
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+  }
+  .center {
+    text-align: center;
+    border: 3px solid green;
+  }
