@@ -31,11 +31,11 @@ html {
 .header-class {
     position: fixed;
     height: 100%;
-    width: 18%;
+    width: 13%;
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: linear-gradient(#78e08f, rgba(6, 69, 20, 0.99));
+    background-image: linear-gradient(#00bd9d, #3cc059fc);
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -47,7 +47,7 @@ html {
 
 .main-nav li a {
     text-decoration: none;
-    color: black;
+    color: #eff7f6;
 }
 
 .main-nav li a:hover {
