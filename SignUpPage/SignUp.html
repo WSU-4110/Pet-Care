@@ -16,27 +16,29 @@
 -->
 <html> 
 
-    <head>
-            <!-- <link rel="stylesheet" type="text/css" href="SignUp.css"> -->
-            <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-            <script>
-              
-            var password = document.getElementById("psw")
-              , confirm_password = document.getElementById("psw-repeat");
-            
-              function validatePassword(){
-        if(password.value != confirm_password.value) {
-         confirm_password.setCustomValidity("Passwords Don't Match");
-        } else {
-         confirm_password.setCustomValidity('');
-        }
-    }
+  <head>
+    <link rel="stylesheet" type="text/css" href="SignUp.css">
+    <!-- 
+    ==========================
+    Password validation
+    ==========================
+-->
+    <script>
+    var password = document.getElementById("psw")
+      , confirm_password = document.getElementById("psw-repeat");
+    
+      function validatePassword(){
+if(password.value != confirm_password.value) {
+ confirm_password.setCustomValidity("Passwords Don't Match");
+} else {
+ confirm_password.setCustomValidity('');
+}
+}
 
-    password.onchange = validatePassword;
+password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
-            </script>
-    </head>
+    </script>
+</head>
 
     <form action="action_page.php" style="border:1px solid #ccc">
             <div class="container">
