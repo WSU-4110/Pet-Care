@@ -4,74 +4,69 @@
     
     PetCare Sprint 1: Homepage
 
-    Author: Santosh Ahraham
+    Author: Santhosh Ahraham
     ===================================================-->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home-page</title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home-page</title>
+
     <!--Link to other css pages-->
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="css/homepage_style.css">
+    <link rel="stylesheet" href="css/homepage_style.css">
 </head>
-    
-<!--==========================
-                Header
-    ===========================-->
+
+
+<body>
     <div class="header-class">
         <header>
-            <img src="Images/petcare-logo.png" alt="petcare logo">
             <!--==========================
                 Navigation Bar
         ===========================-->
             <nav class="nav">
                 <ul class="main-nav">
+                    <img src="images/petcare-logo.png" alt="petcare logo">
                     <li><a href="index.html">Home</a></li><br>
                     <li><a href="PetParks.html">Pet Parks</a></li><br>
                     <li><a href="lostAndfound.html">Lost and Found</a></li><br>
-                    <li><a href="#">About Us</a></li><br>
+                    <li><a href="ContactUs.html">Contact Us</a></li><br>
                 </ul>
             </nav>
 
         </header>
     </div>
-    
-<body>
-    
-    <!--====================
+    <h2 class="post">Pet of the day</h3>
+        <div class="post">
+            <header>
+                <div>
+                    <p style="float: left;"><img src="images/profile.png" width="50px" border="0px"></p>
+                </div>
+            </header>
+            <img src="images/dog-pic.jpg" alt="Dog picture" style="width:40%;">
+            <div class="header">
+                <h4>Pet of the day: Oscar</h4>
+            </div>
+            <form>
+                <label for="exampleMessage">Comment</label>
+                <br><textarea class="u-full-width" placeholder="What's on your mind?" id="exampleMessage"></textarea></br>
+                <input class="button-primary" type="submit" value="Post">
+            </form>
+        </div>
+        <!--====================
         Section
     ==================-->
-  <div class="container">
-      <header>
-          <img src="images/logo.png" alt="petcare logo">
-          <h1>Homepage</h1> 
-          <nav>
-            <a href="#" class ="hide-desktop">
-              <img src="images/ham.svg" alt="menu toggle" class="menu" id="menu">
-            </a>
-            <ul class="show-desktop hide-desktop" id="nav">
-                <li id="exit" class="exit-btn hide desktop">
-                  <img src="images/exit.svg" alt="exit">
-                </li>
-                <li><input type="text" placeholder="Search"></li>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#profile">My Profile</a></li>
-            </ul>
-          </nav> 
-      </header> 
-      <form>
-          <label for="exampleMessage">Create a Post</label>
-          <br><textarea class="u-full-width" placeholder="What's on your mind?" id="exampleMessage"></textarea>
-          <input class="button-primary" type="submit" value="Post">
-      </form>
-  </div>
-    
-    <!--==========================
+        <div class="container">
+            <form>
+                <label for="exampleMessage">Create a Post</label>
+                <br><textarea class="u-full-width" placeholder="What's on your mind?" id="exampleMessage"></textarea>
+                <input class="button-primary" type="submit" value="Post">
+            </form>
+        </div>
+
+        <!--==========================
                 footer
     ===========================-->
 
@@ -85,6 +80,6 @@
                 <li><img src="Images/youTube.png" alt="YouTube icon"></li>
             </ul>
         </footer>
-    
+
 </body>
 </html>
