@@ -31,7 +31,7 @@ html {
 .header-class {
     position: fixed;
     height: 100%;
-    width: 13%;
+    width: 15%;
     z-index: 1;
     top: 0;
     left: 0;
@@ -213,3 +213,10 @@ h2.post{
 .reset-btn:hover{
     background-color: red;
 }
+
+
+/*---------------------------------------------
+            Google Calendar 
+----------------------------------------------*/
+iframe{ margin:0 auto;
+    display: block;}
