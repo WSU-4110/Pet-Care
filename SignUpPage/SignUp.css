@@ -1,5 +1,9 @@
 * {box-sizing: border-box}
 
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 50px 500px
+}
 /* Full-width input fields */
   input[type=text], input[type=password] {
   width: 100%;
@@ -7,22 +11,24 @@
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #eff7f6;
+  font-family: 'Lato', sans-serif;
 }
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: #eff7f6;
   outline: none;
 }
 
+
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #eff7f6;
   margin-bottom: 25px;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #00bd9d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -39,7 +45,7 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: #e54b4b;
 }
 
 /* Float cancel and signup buttons and add an equal width */
