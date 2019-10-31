@@ -1,0 +1,54 @@
+body {
+    backface-visibility: visible;
+    background-blend-mode: darken;
+    background-color: #eff7f6;
+    font-family: 'Lato', sans-serif;
+    padding: 50px 600px;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px bold #eff7f6;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #00bd9d;
+  color: #eff7f6;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  
+}
+
+img.avatar {
+  width: 50%;
+  border-radius: 5%
+}
+
+
+span.psw {
+  float: center;
+  padding-top: 0px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 600px) {
+  span.psw {
+     display: block;
+     float: center;
+  }
+}

@@ -18,105 +18,150 @@
     <meta http-equiv="Expires" content="-1">
 
     <!-- Link to other pages -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-    
+
 <body>
     <!--==========================
                 Header
     ===========================-->
-    <header class="header-class">
-        <h1> Pet Care(Logo)</h1>
-        <!--==========================
+    <div class="header-class">
+        <header>
+            <!--==========================
                 Navigation Bar
         ===========================-->
-        <nav class="nav">
-            <ul class="main-nav">
-                <li><a href="#">Home</a></li><br>
-                <li><a href="#">Pet Parks</a></li><br>
-                <li><a href="#">Lost and Found</a></li><br>
-                <li><a href="#">About Us</a></li><br>
-            </ul>
-        </nav>
+            <nav class="nav">
+                <ul class="main-nav">
+                    <img src="images/petcare-logo.png" alt="petcare logo">
+                    <li><a href="index.html">Home</a></li><br>
+                    <li><a href="PetParks.html">Pet Parks</a></li><br>
+                    <li><a href="PetVets.html">Pet Vets</a></li><br>
+                    <li><a href="lostAndfound.html">Lost and Found</a></li><br>
+                    <li><a href="stray animal.html">Stray Animals</a></li><br>
+                    <li><a href="eventpage.html">Events</a></li><br>
+                    <li><a href="#">About Us</a></li><br>
+                    <li><a href="ContactUs.html">Contact Us</a></li><br>
+                </ul>
+            </nav>
 
-    </header>
+        </header>
+    </div>
     <!--==========================
                 description
     ===========================-->
-    <h2>Pet Parks</h2>
-    <p>Here are the top 10 parks around metro detroit area. You can take your pets for stroll and give them all the joy.</p>
-    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
 
-    <!--==========================
-                Section
+    <!--=====================
+        Div main container
+    =======================-->
+
+    <div class="contents">
+        <div class="main-container">
+            <h2 class="tittle-header">Pet Parks</h2>
+
+
+            <!--======================
+                Pet Pictures
+            =========================-->
+            <section class="pet-park-photos">
+                <ul class="photo-showcase clearfix"></ul>
+
+                <li>
+                    <figure class="park-photo">
+                        <img src="Images/pet-park-2.jpg" alt="dog-playing">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="park-photo">
+                        <img src="Images/pet-park-5.jpg" alt="dog-playing">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="park-photo">
+                        <img src="Images/pet-park-3jpg.jpg" alt="dog-playing">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="park-photo">
+                        <img src="Images/pet-park-4.jpg" alt="dog-playing">
+                    </figure>
+                </li>
+
+
+            </section>
+
+            <!--==========================
+            Map Section
     ===========================-->
-    <section>
-        <strong>The map will go on the lest side of this screen</strong>
+            <p>Here are the top 5 parks around metro detroit area. You can take your pets for a stroll and give them all the joy.</p>
 
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=dog%20parks%20&key=AIzaSyBhXWvJvEME5D-x_nF_vX9rORS5XEXj2zc" allowfullscreen></iframe>
+            <section>
 
-    </section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d134232.20931362314!2d-83.1603836133164!3d42.38503894543276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spet%20parks%20around%20detroit!5e0!3m2!1sen!2sus!4v1570676246992!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-    <!--Remove this line-->
-    <hr>
+            </section>
 
-    <!--==========================
+            <!--==========================
                 Aside
     ===========================-->
-    <aside>Park names(This goes on the right side of the screen)
-        <ol type="1">
-            <li>
-                <div>Pleasant Ridge Dog Run</div>
-                <br>
-                Ridge Rd. And Millington Rd.
-                Pleasant Ridge, MI 48069
-            </li>
+            <aside>
+                <div class="aside-park-names">
+                    <ol type="1">
+                        <li>
+                            <div class="park-name-header">Grand Circus Dog Park</div>
+                            <br>
+                            2-98 E Adams Ave,
+                            Detroit, MI 48226
+                        </li>
 
-            <li>
-                <div>Goss Park</div>
-                <br>
-                Sullivan Dr.
-                Guilford, CT 06437
-            </li>
+                        <li>
+                            <div class="park-name-header">Detroit Dog Park</div>
+                            <br>
+                            2699 Rose St,
+                            Detroit, MI 48216
+                        </li>
 
-            <li>
-                <div>Balduck Dog Park</div>
-                <br>
-                Chandler Park Drive
-                Detroit, MI 48201
-            </li>
+                        <li>
+                            <div class="park-name-header">Jhon R. Watson Park</div>
+                            <br>
+                            Chandler Park Drive
+                            Detroit, MI 48201
+                        </li>
 
-            <li>
-                <div>Lockman Park Dog Run</div>
-                <br>
-                Connecticut And Derby
-                Royal Oak, MI 48068
-            </li>
+                        <li>
+                            <div class="park-name-header">Midtown Dog Park</div>
+                            <br>
+                            Connecticut And Derby
+                            Detroit, MI 48068
+                        </li>
 
-            <li>
-                <div>Anne Fracassa Memorial Dog Park (At Burdi Park)</div>
-                <br>
-                Pauline Street And 12 Mile Rd.
-                Warren, MI 48088
-            </li>
-
-        </ol>
-    </aside>
-
-    <!--==========================
+                        <li>
+                            <div class="park-name-header">Anne Fracassa Memorial Dog Park (At Burdi Park)</div>
+                            <br>
+                            Pauline Street And 12 Mile Rd.
+                            Warren, MI 48088
+                        </li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+        <!--==========================
                 footer
     ===========================-->
-    
-    <footer class="footer-class">
-        <ul class= "social-icons"> Follow us
-            <li><img src="Images/fb_icon.png" alt="facebook icon"></li>
-            <li><img src="Images/google-plus.png" alt="google plus icon"></li>
-            <li><img src="Images/insta.png" alt="Instragram icon"></li>
-            <li><img src="Images/linked-in.png" alt="linked-in icon"></li>
-            <li><img src="Images/twitter.png" alt="Twitter icon"></li>
-            <li><img src="Images/youTube.png" alt="YouTube icon"></li>
-        </ul>
-    </footer>
-</body>
 
-</html>
+        <footer class="footer-class">
+            <ul class="social-icons"> Follow us
+                <li><img src="Images/fb_icon.png" alt="facebook icon"></li>
+                <li><img src="Images/google-plus.png" alt="google plus icon"></li>
+                <li><img src="Images/insta.png" alt="Instragram icon"></li>
+                <li><img src="Images/linked-in.png" alt="linked-in icon"></li>
+                <li><img src="Images/twitter.png" alt="Twitter icon"></li>
+                <li><img src="Images/youTube.png" alt="YouTube icon"></li>
+            </ul>
+        </footer>
+    </div>
+
+</body></html>

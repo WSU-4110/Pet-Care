@@ -1,0 +1,123 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  * {box-sizing: border-box}
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #fff;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+.logo{
+    width:100px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+  }
+  /*---------------------------------------------
+            Header Styling
+----------------------------------------------*/
+
+.tittle-header {
+  color: #387245;
+}
+
+.main-nav li {
+
+  list-style: none;
+}
+
+.header-class {
+  position: fixed;
+  height: 100%;
+  width: 18%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#78e08f, rgba(6, 69, 20, 0.99));
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.contents {
+  margin-left: 18%;
+  padding: 0px 10px;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav li a:hover {
+  color: #fff;
+}
+
+  /*---------------------------------------------
+            Footer Styling
+----------------------------------------------*/
+
+.footer-class {
+
+  background-color: #3b3b3b;
+  color: #f1fffb;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.social-icons li {
+  list-style: none;
+  display: inline-block;
+  float: right;
+  padding-left: 25px;
+}
+
+.footer-class ul {
+  margin-right: 25px;
+}
+
+.footer-class-lost&found ul{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  
+}
+
+/*--------------End of footer -----------------------*/
+ 

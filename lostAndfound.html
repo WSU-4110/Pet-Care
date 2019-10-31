@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!-- ==============================================
+    CSC 4111
+    
+    PetCare Sprint 1: lost and found
+
+    Author: Omar Faruq
+    ===================================================-->
+
+<html>
+
+<head>
+    <title>Pet Parks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Omar Faruq" />
+    <meta name="description" content="Pet Parks" />
+    <meta http-equiv="Expires" content="-1">
+
+    <!-- Link to other pages -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--==========================
+                Header
+    ===========================-->
+    <div class="header-class">
+        <header>
+            <!--==========================
+                Navigation Bar
+        ===========================-->
+            <nav class="nav">
+                <ul class="main-nav">
+                    <img src="images/petcare-logo.png" alt="petcare logo">
+                    <li><a href="index.html">Home</a></li><br>
+                    <li><a href="PetParks.html">Pet Parks</a></li><br>
+                    <li><a href="PetVets.html">Pet Vets</a></li><br>
+                    <li><a href="lostAndfound.html">Lost and Found</a></li><br>
+                    <li><a href="stray animal.html">Stray Animals</a></li><br>
+                    <li><a href="eventpage.html">Events</a></li><br>
+                    <li><a href="#">About Us</a></li><br>
+                    <li><a href="ContactUs.html">Contact Us</a></li><br>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+
+    <!--===================
+        Section 
+    ==========================-->
+    <div class="contents">
+        <h2 class="tittle-header">Lost And Found</h2>
+
+
+        <!--===================
+        User Form
+    ==========================-->
+        <form method="get" enctype="application/x-www-form-urlencoded" action="http://www.tipjar.com/cgi-bin/test">
+
+            <label class="level-design">First name:</label>
+            <input class="input-class" type="text" name="txtFirstName">
+            <br><br>
+
+            <label class="level-design">Last name:</label>
+            <input class="input-class" type="text" name="txtLastName">
+            <br><br>
+
+            <label class="level-design">Your Email:</label>
+            <input class="input-class" type="email">
+            <br><br>
+
+            <label class="level-design">Your Phone Number:</label>
+            <input class="input-class" type="number">
+            <br><br>
+
+            <label class="level-design">Last Seen:</label>
+            <input class="input-class" type="date">
+            <br><br>
+
+            <label class="level-design">Pet Type:</label>
+            <select name="petType">
+                <option value="D">Dog</option>
+                <option value="C">Cat</option>
+                <option value="B">Bird</option>
+            </select>
+            <br><br>
+
+            <label class="level-design">Picture of Your Pet: </label>
+            <input class="input-class" type="file" name="inputFile">
+            <br><br>
+
+            <div class="btn">
+                <input class="submit-btn" type="submit" value="Submit">
+                <input class="reset-btn" type="reset" value="Reset">
+                <br><br>
+            </div>
+        </form>
+        <!--==========================
+                footer
+    ===========================-->
+        <footer class="footer-class footer-class-lost-and-found">
+            <ul class="social-icons"> Follow us
+                <li><img src="Images/fb_icon.png" alt="facebook icon"></li>
+                <li><img src="Images/google-plus.png" alt="google plus icon"></li>
+                <li><img src="Images/insta.png" alt="Instragram icon"></li>
+                <li><img src="Images/linked-in.png" alt="linked-in icon"></li>
+                <li><img src="Images/twitter.png" alt="Twitter icon"></li>
+                <li><img src="Images/youTube.png" alt="YouTube icon"></li>
+            </ul>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
