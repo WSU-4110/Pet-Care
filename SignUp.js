@@ -1,7 +1,8 @@
-class signup {
+let user = class {
     constructor(fname, lname) {
       this.fname = firstname;
       this.lname = lastname;
+
     }
 
     constructor(email){
@@ -21,12 +22,5 @@ class signup {
 
     }
 
-    constructor(submit){
-      this.submit= submit;
-
     }
 
-
-
-
-  }
