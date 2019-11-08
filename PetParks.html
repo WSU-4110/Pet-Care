@@ -51,104 +51,52 @@
     <!--==========================
                 description
     ===========================-->
+    <script type="text/javascript">
+        
+        // **********************************************
+        //      Park Class
+        // **********************************************
+        function Park(name, location, hours)
+        {
+            this.name = name,
+            this.location = location,
+            this.hours = hours
+        };
 
-    <!--=====================
-        Div main container
-    =======================-->
+        // **********************************************
+        //      Park Getters
+        // **********************************************
 
-    <div class="contents">
-        <div class="main-container">
-            <h2 class="tittle-header">Pet Parks</h2>
+        Park.prototype.getParkName = function(){
+            console.log('The name of park is '+this.name);
+        }
 
+        Park.prototype.getParkLocation = function(){
+            console.log('The name of park is '+this.location);
+        }
 
-            <!--======================
-                Pet Pictures
-            =========================-->
-            <section class="pet-park-photos">
-                <ul class="photo-showcase clearfix"></ul>
+        Park.prototype.getParkHours = function(){
+            console.log('The name of park is '+this.hours);
+        }
 
-                <li>
-                    <figure class="park-photo">
-                        <img src="Images/pet-park-2.jpg" alt="dog-playing">
-                    </figure>
-                </li>
+        // **********************************************
+        //      Park objects
+        // **********************************************
+        let park1 = new Park("Grand Circus Dog Park","2-98 E Adams Ave,Detroit,MI 48226","24 hours");
+        let park2 = new Park("Detroit Dog Park","2699 Rose St,Detroit, MI 48216","24 hours");        
+        let park3 = new Park("Jhon R. Watson Park","Chandler Park Drive,Detroit, MI 48201","24 hours");
+        let park4 = new Park("Midtown Dog Park","Connecticut And Derby,Detroit, MI 48068","24 hours");
 
-                <li>
-                    <figure class="park-photo">
-                        <img src="Images/pet-park-5.jpg" alt="dog-playing">
-                    </figure>
-                </li>
+        // **********************************************
+        //      Testing objects into console window
+        // **********************************************
 
-                <li>
-                    <figure class="park-photo">
-                        <img src="Images/pet-park-3jpg.jpg" alt="dog-playing">
-                    </figure>
-                </li>
+        console.log(park1.location); // park 1 location
+        console.log(park2.name);     // park 2 name
 
-                <li>
-                    <figure class="park-photo">
-                        <img src="Images/pet-park-4.jpg" alt="dog-playing">
-                    </figure>
-                </li>
-
-
-            </section>
-
-            <!--==========================
-            Map Section
-    ===========================-->
-            <p>Here are the top 5 parks around metro detroit area. You can take your pets for a stroll and give them all the joy.</p>
-
-            <section>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d134232.20931362314!2d-83.1603836133164!3d42.38503894543276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spet%20parks%20around%20detroit!5e0!3m2!1sen!2sus!4v1570676246992!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-            </section>
-
-            <!--==========================
-                Aside
-    ===========================-->
-            <aside>
-                <div class="aside-park-names">
-                    <ol type="1">
-                        <li>
-                            <div class="park-name-header">Grand Circus Dog Park</div>
-                            <br>
-                            2-98 E Adams Ave,
-                            Detroit, MI 48226
-                        </li>
-
-                        <li>
-                            <div class="park-name-header">Detroit Dog Park</div>
-                            <br>
-                            2699 Rose St,
-                            Detroit, MI 48216
-                        </li>
-
-                        <li>
-                            <div class="park-name-header">Jhon R. Watson Park</div>
-                            <br>
-                            Chandler Park Drive
-                            Detroit, MI 48201
-                        </li>
-
-                        <li>
-                            <div class="park-name-header">Midtown Dog Park</div>
-                            <br>
-                            Connecticut And Derby
-                            Detroit, MI 48068
-                        </li>
-
-                        <li>
-                            <div class="park-name-header">Anne Fracassa Memorial Dog Park (At Burdi Park)</div>
-                            <br>
-                            Pauline Street And 12 Mile Rd.
-                            Warren, MI 48088
-                        </li>
-                    </ol>
-                </div>
-            </aside>
-        </div>
+        console.log(park3.location); // park 3 location
+        console.log(park4.name);     // park 4 name
+    </script>    
         <!--==========================
                 footer
     ===========================-->
