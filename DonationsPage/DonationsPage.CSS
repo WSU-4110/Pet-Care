@@ -17,6 +17,13 @@ nav {
     list-style-type: none;
     padding: 0;
   }
+
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 footer{
     background-color:  #d6f5d6 ;
     padding: 10px;
