@@ -33,5 +33,10 @@ nav {
 footer{
     background-color:  #d6f5d6 ;
     padding: 10px;
-
+    text-align: center;
 }
+@media (max-width: 600px) {
+    nav, Donate {
+      width: 100%;
+      height: auto;
+    }
