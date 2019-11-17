@@ -6,6 +6,12 @@ header{
     background-color: #d6f5d6;
     text-align: center;
 }
+nav {
+    float: left;
+    width: 30%;
+    background: #94ce94;
+    padding: 20px;
+  }
 footer{
     background-color:  #d6f5d6 ;
     padding: 10px;
