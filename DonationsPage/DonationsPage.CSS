@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+header{
+    font: 20px arial, sans-serif; 
+    background-color: #d6f5d6;
+    text-align: center;
+}
 footer{
     background-color:  #d6f5d6 ;
     padding: 10px;
