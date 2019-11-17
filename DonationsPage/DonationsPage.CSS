@@ -1,17 +1,25 @@
 *{
     box-sizing: border-box;
 }
+h2, h3{
+
+    color: white;
+    font: 20px arial, sans-serif;
+}
+
 header{
     font: 20px arial, sans-serif; 
-    background-color: #d6f5d6;
+    background-color: #94ce94;
     text-align: center;
-    
 }
 nav {
     float: left;
     width: 30%;
     background: #94ce94;
     padding: 20px;
+    height: 450px;
+    text-align: center;
+    vertical-align: middle;
   }
   nav ul {
     list-style-type: none;
@@ -23,18 +31,21 @@ nav {
     display: table;
     clear: both;
   }
+
   Donate {
     float: left;
     padding: 20px;
-    background-color: #383b38;
+    background-color: #a3a3a3;
     width: 70%;
+    height: 450px;
   }
 
 footer{
-    background-color:  #d6f5d6 ;
+    background-color:  #94ce94 ;
     padding: 10px;
     text-align: center;
 }
+
 @media (max-width: 600px) {
     nav, Donate {
       width: 100%;
