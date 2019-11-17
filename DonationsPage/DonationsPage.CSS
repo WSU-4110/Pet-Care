@@ -1,0 +1,16 @@
+*{
+
+    box-sizing: border-box
+}
+nav main-nav {
+
+    float: left;
+    width: 30%;
+    background: green;
+    padding: 20px;
+}
+
+h1{
+
+    font: 1000px;
+}
