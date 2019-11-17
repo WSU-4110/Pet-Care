@@ -23,6 +23,12 @@ nav {
     display: table;
     clear: both;
   }
+  Donate {
+    float: left;
+    padding: 20px;
+    background-color: #383b38;
+    width: 70%;
+  }
 
 footer{
     background-color:  #d6f5d6 ;
