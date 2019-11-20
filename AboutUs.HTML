@@ -1,12 +1,19 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 <!-- 
     ==============================================
     CSC 4111
     
     PetCare Sprint 2: About Us
+<<<<<<< HEAD
+    Date: 10/22/2019
+=======
 
     Date: 10/22/2019
 
+>>>>>>> master
     Author: Laith Rafidi
     =================================================== 
 -->
@@ -59,7 +66,11 @@
 -->
 
     <script type = "text/javascript">
+<<<<<<< HEAD
+    /*
+=======
     
+>>>>>>> master
     class Developer{
         constructor(_name, _title, _description)
         {
@@ -69,6 +80,115 @@
             
             this.description=_description;
         }
+<<<<<<< HEAD
+        get name(){
+            return this.name;
+        }
+        get Title(){
+            return _title;
+        }
+        get Description(){
+            return _description;
+        }
+    }
+    
+    var hassanDescription = "Hassan is a Software Engineer on the Pet-Care Team working towards bringing all Pet stop shops into one simple location. Hassan is passionate about pets, his favorite pets is Fish.";
+    let Hassan = new Developer("Hassan Bachir", "Software Developer", hassanDescription);
+       */
+    var Hassan = {
+        firstName = "Hassan",
+        lastName = "Bachir",
+        title = "Software Developer",
+        description = "Hassan is a Software Engineer on the Pet-Care Team working towards bringing all Pet stop shops into one simple location. Hassan is passionate about pets, his favorite pets is Fish.",
+        getFullName: function(){
+            return firstName + " " + lastName;
+        },
+        getDescription: function(){
+            return description;
+        },
+        getTitle: function(){
+            return title;
+            
+        },
+    
+    }
+
+    var Laith = {
+        firstName= "Laith",
+        lastName= "Rafidi",
+        title= "Co-Owner & Software Engineer",
+        description= "Laith Joined the team because he was forced or else he would fail his Software Engineering class at Wayne State University. Laith has a passion for pets and also wanted a one stop shop for when he gets a dog!",
+        getFullName: function(){
+            return firstName + " " + lastName;
+        },
+        getDescription: function(){
+            return description;
+        },
+        getTitle: function(){
+            return title;
+
+        },
+    
+    }
+
+    var Mahir = {
+        firstName= "Mahir",
+        lastName= "Chowdhury",
+        title = "CEO & Software Engineer",
+        description= "Mahir came up with this idea because he is an owner of two cute kitties and wanted a one stop shop for all recourses needed for his two cats",
+        getFullName: function(){
+            return firstName + " " + lastName;
+        },
+        getDescription: function(){
+            return description;
+
+        },
+        getTitle: function(){
+            return title;
+        },
+    }
+
+    var Santhosh = {
+        firstName="Santhosh",
+        lastName="Abraham",
+        title="Co-Owner & Software Engineer",
+        description="Santhosh acts as a backend Software Engineer as well as being a co-owner for Pet-care. He loves pets especially dogs, cats and parrots",
+        getFullName: function(){
+            return firstName+" "+lastName;
+
+        },
+        getDescription: function(){
+            return description;
+
+        },
+        getTitle: function(){
+            return title;
+
+        },
+    
+    }
+
+    var Omar = {
+        firstName="Omar",
+        lastName="Faruq",
+        title="Co-Owner & Software Engineer",
+        description="Omar is a passionate Software Developer on our team that also loves pets. He aims to one day own a Chihuahua as well as a Parrot to keep him company",
+        getFullName: function(){
+            return firstName + " " + lastName;
+           
+        },
+        getDescription: function(){
+            return description;
+            
+        },
+        getTitle: function(){
+            return title;
+        },
+    
+    
+    }
+
+=======
 
         getName(){
             return _name;
@@ -87,6 +207,7 @@
     var hassanDescription = "Hassan is a Software Engineer on the Pet-Care Team working towards bringing all Pet stop shops into one simple location. Hassan is passionate about pets, his favorite pets is Fish.";
     let Hassan = new Developer("Hassan Bachir", "Software Developer", hassanDescription);
     
+>>>>>>> master
     </script>
         <!--
         ==========================
@@ -98,9 +219,15 @@
                 <div class = "card"> <!-- begin class card-->
                     <img src="../Images/TeamPics/MahirsPic.png" alt="Mahir's Picture" style ="width: 100%">
                     <div class= "container">
+<<<<<<< HEAD
+                         <script type="text/javascript">Mahir.getFullName();</script>
+                        <p class = "title"> <script type="text/javascript">Mahir.getTitle();</script></p>
+                        <p><script type="text/javascript">Mahir.getDescription();</script></p>
+=======
                         <h2> Mahir Chowdehry</h2>
                         <p class = "title"> CEO & Software Engineer</p>
                         <p>Mahir came up with this idea because he is an owner of two cute kitties and wanted a one stop shop for all recourses needed for his two cats.</p>
+>>>>>>> master
                         <p> Contact Mahir <a href="mailto:com">by emailing him</a></p>
                         <p> <button class = "button"> <a href="mailto:com">Contact Him!</a></p></button></p>
                     </div>
@@ -108,15 +235,30 @@
             </div> <!-- End class column-->
 
         <!--
+<<<<<<< HEAD
+   
+=======
+>>>>>>> master
         ==========================
             Team Member #2
         ===========================
         -->
+<<<<<<< HEAD
+        <div class = "row"> <!-- begin class row-->
+=======
 
+>>>>>>> master
             <div class ="column"> <!-- begin class column-->
                 <div class = "card"> <!-- begin class card-->
                     <img src="../Images/TeamPics/LaithsPic.png" alt="Laith's Picture" style ="width: 100%">
                     <div class= "container">
+<<<<<<< HEAD
+                         <h2><script type="text/javascript">Laith.getFullName();</script></h2>
+                        <p class = "title"> <script type="text/javascript">Laith.getTitle();</script></p>
+                        <p><script type="text/javascript">Laith.getDescription();</script></p>
+                        <p> Contact Laith <a href="mailto:com">by emailing him</a></p>
+                        <p> <button class = "button"> <a href="mailto:com">Contact Him!</a></p></button></p>
+=======
                         <h2> Laith Rafidi</h2>
                         <p class = "title"> Co-Owner & Software Engineer</p>
                         <p>Laith Joined the team because he was forced or else he would fail his Software Engineering class at Wayne State University. Laith has a passion
@@ -126,10 +268,31 @@
                         
                         <p> Contact Laith by <a href="mailto:Laithrafidi.98@gmail.com">emailing him</a></p>
                         <p> <button class = "button"> <a href="mailto:Laithrafidi.98@gmail.com">Contact Him!</a></p></button></p>
+>>>>>>> master
                     </div>
                 </div> <!-- End class card-->
             </div> <!-- End class column-->
 
+<<<<<<< HEAD
+        <!--
+       ==========================
+            Team Member #3
+        ===========================
+        -->
+        <div class = "row"> <!-- begin class row-->
+            <div class ="column"> <!-- begin class column-->
+                <div class = "card"> <!-- begin class card-->
+                    <img src="../Images/TeamPics/HassansPic.png" alt="Hassan's Picture" style ="width: 100%">
+                    <div class= "container">
+                         <h2><script type="text/javascript">Hassan.getFullName();</script></h2>
+                        <p class = "title"> <script type="text/javascript">Hassan.getTitle();</script></p>
+                        <p><script type="text/javascript">Hassan.getDescription();</script></p>
+                        <p> Contact Hassan <a href="mailto:com">by emailing him</a></p>
+                        <p> <button class = "button"> <a href="mailto:com">Contact Him!</a></p></button></p>
+                    </div>
+                </div> <!-- End class card-->
+            </div> <!-- End class column-->
+=======
 
         <!--
         ==========================
@@ -139,6 +302,7 @@
 
 
 
+>>>>>>> master
 
         <!--
         ==========================
@@ -148,6 +312,20 @@
         <div class = "row"> <!-- begin class row-->
             <div class ="column"> <!-- begin class column-->
                 <div class = "card"> <!-- begin class card-->
+<<<<<<< HEAD
+                    <img src="../Images/TeamPics/SanthoshsPic.png" alt="Santhosh's Picture" style ="width: 100%">
+                    <div class= "container">
+                         <h2><script type="text/javascript">Santhosh.getFullName();</script></h2>
+                        <p class = "title"> <script type="text/javascript">Santhosh.getTitle();</script></p>
+                        <p><script type="text/javascript">Santhosh.getDescription();</script></p>
+                        <p> Contact Santhosh <a href="mailto:com">by emailing him</a></p>
+                        <p> <button class = "button"><a href="mailto:com">Contact Him!</a></p></button></p>
+                    </div>
+                </div> <!-- End class card-->
+            </div> <!-- End class column-->
+
+        <!--
+=======
                     <img src="../Images/TeamPics/SanthoshsPic.png" alt="Mahir's Picture" style ="width: 100%">
                     <div class= "container">
                         <h2> Santhosh Abraham</h2>
@@ -160,10 +338,23 @@
                 </div> <!-- End class card-->
             </div> <!-- End class column-->
             <!--
+>>>>>>> master
             ==========================
                 Team Member #5
             ===========================
             -->
+<<<<<<< HEAD
+
+        <div class = "row"> <!-- begin class row-->
+            <div class ="column"> <!-- begin class column-->
+                <div class = "card"> <!-- begin class card-->
+                    <img src="../Images/TeamPics/OmarsPic.png" alt="Omar's Picture" style ="width: 100%">
+                    <div class= "container">
+                         <h2><script type="text/javascript">Omar.getFullName();</script></h2>
+                        <p class = "title"> <script type="text/javascript">Omar.getTitle();</script></p>
+                        <p><script type="text/javascript">Omar.getDescription();</script></p>
+                        <p> Contact Omar <a href="mailto:com">by emailing him</a></p>
+=======
             <div class ="column"> <!-- begin class column-->
                 <div class = "card"> <!-- begin class card-->
                     <img src="../Images/TeamPics/OmarsPic.png" alt="Mahir's Picture" style ="width: 100%">
@@ -174,11 +365,16 @@
 
                         </p>
                         <p> Contact Omar by <a href="mailto:com">emailing him</a></p>
+>>>>>>> master
                         <p> <button class = "button"> <a href="mailto:com">Contact Him!</a></p></button></p>
                     </div>
                 </div> <!-- End class card-->
             </div> <!-- End class column-->
+<<<<<<< HEAD
+
+=======
             
+>>>>>>> master
         </div>
 
 </body>
@@ -192,6 +388,10 @@
         ==========================
         end of HTML file 
         ==========================
+<<<<<<< HEAD
+    -->
+=======
     -->
 
 
+>>>>>>> master
