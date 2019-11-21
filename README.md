@@ -18,7 +18,7 @@ The Purpose of Pet-Care is to have an environment where Pet Owners are able to s
   
 #### Installation:
 ```
-  1) Git clone the repo
+  1) Git clone https://github.com/WSU-4110/Pet-Care.git
   2) Run MongoDB and Node.js
   3) Run index.js from cmd
   4) Open index.html
