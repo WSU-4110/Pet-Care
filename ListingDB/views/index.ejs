@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lost Listing</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
+            <div class="container">
+                    <header class="jumbotron">
+                        <div class="container">
+                            <h1>Lost Pets Listing</h1>
+                        </div>
+                    </header>
+                    
+                    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+                       <% listing.forEach(function(listing){ %>
+                           <div class="col-md-3 col-sm-6">
+                               <div class="thumbnail">
+                                  <img src="<%= listing.image %>">
+                                  <div class="caption">
+                                      <h4><strong>Pet Owner: </strong><%= listing.name %></h4>
+                                      <h4><strong>Email: </strong><%= listing.email %></h4>
+                                      <h4><strong>Phone Number: </strong><%= listing.phone_number %></h4>
+                                  </div>
+                                  
+                               </div>
+                           </div>
+                       <% }); %>
+                   </div>
+               </div>
+    
+    </body>
+</html>
