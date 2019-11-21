@@ -1,9 +1,6 @@
 # Pet-Care
-
+![Logo](https://user-images.githubusercontent.com/33672419/69312841-09aaab00-0bfe-11ea-9f1c-efc5a13e8787.png)
 ## Social media website for pet owners.
-
-![New Project(1)](https://user-images.githubusercontent.com/33672419/67973847-ae316280-fbe7-11e9-9881-017f559a6d66.png)
-
 ### Functionally 
 The functionally behind Pet-Care is for Pet Owners to have a one stop shop that will connect them to any resource their pet might need. The Pet-Care Website will Provide information such as Pet Parks, Pet Vets, Lost and Found, Stray Animals, Events and a couple other tabs and features.
 
