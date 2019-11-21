@@ -44,8 +44,7 @@ Listing.create(
          console.log("New Listing: ");
          console.log(list);
      }
-   });
-
+});
 
 
 //listhening port for the app
