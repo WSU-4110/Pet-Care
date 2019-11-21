@@ -18,8 +18,7 @@ app.set("view engine", "ejs");
 
 // SCHEMA SETUP
 var listingSchema = new mongoose.Schema({
-    first_name: String,
-    last_name: String,
+    name: String,
     email: String,
     phone_number:Number,
     image: String,
@@ -29,6 +28,23 @@ var listingSchema = new mongoose.Schema({
  //modeling an obeject after the schema
  var Listing = mongoose.model("Listing", listingSchema);
 
+ Listing.create(
+    {
+        name:"Andy Smith",
+        email: "andy@yahoo.net",
+        phone_number: 5683787771,
+        image: "https://www.homeagain.com/static/images/articles/found-pet-tips.jpg",
+        pet_type:"dog"
+        
+    },
+    function(err, list){
+     if(err){
+         console.log(err);
+     } else {
+         console.log("New Listing: ");
+         console.log(list);
+     }
+   });
 
 //listhening port for the app
 app.listen(3000,function(){
