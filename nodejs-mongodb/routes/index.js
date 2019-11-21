@@ -62,3 +62,44 @@ router.post('/register',[
 
         hmac = crypto.createHmac("sha1", 'auth secret');
         var encpassword = '';
+
+        if(req.body.password){
+            hmac.update(req.body.password);
+            encpassword = hmac.digest("hex");
+          }
+          var document = {
+              full_name:   req.body.full_name, 
+              email:       req.body.email, 
+              password:    encpassword, 
+              dob:         req.body.dob, 
+              country:     req.body.country, 
+              gender:      req.body.gender, 
+            };
+
+        var user = new User(document); 
+        user.save(function(error){
+            console.log(user);
+            if(error){ 
+            throw error;
+            }
+            res.json({message : "Data saved successfully.", status : "success"});
+        });    
+    }
+});
+
+function findUserByEmail(email){
+
+    if(email){
+        return new Promise((resolve, reject) => {
+        User.findOne({ email: email })
+            .exec((err, doc) => {
+            if (err) return reject(err)
+            if (doc) return reject(new Error('This email already exists. Please enter another email.'))
+            else return resolve(email)
+            })
+        })
+    }
+    }
+
+
+module.exports = router; 
