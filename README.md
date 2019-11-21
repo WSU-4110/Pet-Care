@@ -2,7 +2,7 @@
 ![Logo](https://user-images.githubusercontent.com/33672419/69312841-09aaab00-0bfe-11ea-9f1c-efc5a13e8787.png)
 ## Social media website for pet owners.
 ### Functionally 
-The functionally behind Pet-Care is for Pet Owners to have a one stop shop that will connect them to any resource their pet might need. The Pet-Care Website will Provide information such as Pet Parks, Pet Vets, Lost and Found, Stray Animals, Events and a couple other tabs and features.
+The functionally behind Pet-Care is for Pet Owners to have a one stop shop that will connect Pet Owners to any resource their pet might need. The Pet-Care Website will provide information such as Pet Parks, Pet Vets, Lost and Found, Stray Animals, Events and much more features.
 
 ### Purpose 
 The Purpose of Pet-Care is to have an environment where Pet Owners are able to share pictures of their pets. A random picture will be the winner and be selected as "Pic of the day" on the website for other to enjoy. Other tabs have other resources and information that users might need.
@@ -26,8 +26,8 @@ The Purpose of Pet-Care is to have an environment where Pet Owners are able to s
 
 
 ### Contributors
-   1) [Mahir Chowdhury](https://github.com/Mahir898)
-   2) [Santhosh Abraham](https://github.com/santhosh3000)
-   3) [Omar Rahman](https://github.com/OmarFaruqRahman)
-   4) [Hassan Bachir](https://github.com/HassanBachir)
-   5) [Laith Rafidi](https://github.com/LaithR)
+   1) [Mahir Chowdhury](https://github.com/Mahir898)      [Team Leader / Full Stack Developer]
+   2) [Santhosh Abraham](https://github.com/santhosh3000) [Full Stack Developer]
+   3) [Omar Rahman](https://github.com/OmarFaruqRahman)   [Full Stack Developer]
+   4) [Hassan Bachir](https://github.com/HassanBachir)    [Full Stack Developer]
+   5) [Laith Rafidi](https://github.com/LaithR)           [Full Stack Developer]
