@@ -1,3 +1,9 @@
+/**
+ *  Author: Omar Rahman
+ *  
+ *  Description: File for adding lost animals
+ */
+
 var express     = require("express");
 var app         = express();
 var bodyParser  = require("body-parser");
