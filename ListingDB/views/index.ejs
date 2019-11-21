@@ -5,6 +5,29 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     </head>
     <body>
+            <div class="container">
+                    <header class="jumbotron">
+                        <div class="container">
+                            <h1>Lost Pets Listing</h1>
+                        </div>
+                    </header>
+                    
+                    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+                       <% listing.forEach(function(listing){ %>
+                           <div class="col-md-3 col-sm-6">
+                               <div class="thumbnail">
+                                  <img src="<%= listing.image %>">
+                                  <div class="caption">
+                                      <h4><%= listing.name %></h4>
+                                  </div>
+                                  <p>
+                                      <a href="/listing/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                                  </p>
+                               </div>
+                           </div>
+                       <% }); %>
+                   </div>
+               </div>
     
     </body>
 </html>
