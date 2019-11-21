@@ -7,3 +7,29 @@ block content
       form.form-horizontal(role="form", method="post")
         .form-group
           .alert.alert-danger(role='alert', id="msgDiv")
+
+        .form-group
+          label.col-sm-3.control-label(for="fullname") 
+           strong Full Name
+          .col-sm-9
+            input#fullname.form-control(type="text" placeholder="Full Name" autofocus="" value="")
+        .form-group
+          label.col-sm-3.control-label(for="email") 
+           strong Email
+          .col-sm-9
+            input#email.form-control(type="email" placeholder="Email")
+        .form-group
+          label.col-sm-3.control-label(for="password") 
+           strong Password
+          .col-sm-9
+            input#password.form-control(type="password" placeholder="Password")
+        .form-group
+          label.col-sm-3.control-label(for="cpassword") 
+           strong Confirm Password
+          .col-sm-9
+            input#cpassword.form-control(type="password" placeholder="Confirm password")
+        .form-group
+          label.col-sm-9.control-label(for="dob") 
+           strong Date of Birth
+          .col-sm-9
+            input#dob.form-control(type="date")  
