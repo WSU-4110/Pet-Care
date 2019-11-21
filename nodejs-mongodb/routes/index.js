@@ -10,7 +10,7 @@ const { matchedData, sanitize }   = require('express-validator/filter');
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Petcare Sign-Up'});
  })
- 
+
 /* POST user registration page. */
 router.post('/register',[ 
    
@@ -21,3 +21,20 @@ router.post('/register',[
     .isEmail().withMessage('Please enter a valid email address')
     .trim()
     .normalizeEmail()
+    .custom(value => {
+        return findUserByEmail(value).then(User => {
+          //if user email already exists throw an error
+      })
+    }),
+
+    check('password')
+    .isLength({ min: 5 }).withMessage('Password must be at least 5 chars long')
+    .matches(/\d/).withMessage('Password must contain one number')
+    .custom((value,{req, loc, path}) => {
+      if (value !== req.body.cpassword) {
+          // throw error if passwords do not match
+          throw new Error("Passwords don't match");
+      } else {
+          return value;
+      }
+  }),
