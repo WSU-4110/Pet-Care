@@ -28,22 +28,22 @@ var listingSchema = new mongoose.Schema({
  //modeling an obeject after the schema
 var Listing = mongoose.model("Listing", listingSchema);
 
-Listing.create(
-    {
-        name:"Andy Smith",
-        email: "andy@yahoo.net",
-        phone_number: "5683787771",
-        image: "https://www.homeagain.com/static/images/articles/found-pet-tips.jpg"
+// Listing.create(
+//     {
+//         name:"Andy Smith",
+//         email: "andy@yahoo.net",
+//         phone_number: "5683787771",
+//         image: "https://www.homeagain.com/static/images/articles/found-pet-tips.jpg"
         
-    },
-    function(err, list){
-     if(err){
-         console.log(err);
-     } else {
-         console.log("New Listing: ");
-         console.log(list);
-     }
-});
+//     },
+//     function(err, list){
+//      if(err){
+//          console.log(err);
+//      } else {
+//          console.log("New Listing: ");
+//          console.log(list);
+//      }
+// });
 
 // **********************************************
 
@@ -91,6 +91,6 @@ app.post("/listing", function(req, res){
 // *********************************************************
 //  listhening port for the app
 // *********************************************************
-app.listen(3000,function(){
-    console.log("Server has started on port 3000");
+app.listen(5000,function(){
+    console.log("Server has started on port 5000");
 });
