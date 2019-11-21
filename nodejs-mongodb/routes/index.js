@@ -10,3 +10,14 @@ const { matchedData, sanitize }   = require('express-validator/filter');
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Petcare Sign-Up'});
  })
+ 
+/* POST user registration page. */
+router.post('/register',[ 
+   
+    check('full_name','Name cannot be left blank')
+    .isLength({ min: 1 }),
+   
+    check('email')
+    .isEmail().withMessage('Please enter a valid email address')
+    .trim()
+    .normalizeEmail()
