@@ -26,8 +26,8 @@ The Purpose of Pet-Care is to have an environment where Pet Owners are able to s
 
 
 ### Contributors
-   1) [Mahir Chowdhury](https://github.com/Mahir898)      [Team Leader / Full Stack Developer]
-   2) [Santhosh Abraham](https://github.com/santhosh3000) [Full Stack Developer]
-   3) [Omar Rahman](https://github.com/OmarFaruqRahman)   [Full Stack Developer]
-   4) [Hassan Bachir](https://github.com/HassanBachir)    [Full Stack Developer]
-   5) [Laith Rafidi](https://github.com/LaithR)           [Full Stack Developer]
+   * [Mahir Chowdhury](https://github.com/Mahir898)      [Team Leader / Full Stack Developer]
+   * [Santhosh Abraham](https://github.com/santhosh3000) [Full Stack Developer]
+   * [Omar Rahman](https://github.com/OmarFaruqRahman)   [Full Stack Developer]
+   * [Hassan Bachir](https://github.com/HassanBachir)    [Full Stack Developer]
+   * [Laith Rafidi](https://github.com/LaithR)           [Full Stack Developer]
