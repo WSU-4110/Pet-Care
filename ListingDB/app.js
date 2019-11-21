@@ -16,6 +16,16 @@ mongoose.connect("mongodb://localhost/LostAndFound_Listing");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
+// SCHEMA SETUP
+var listingSchema = new mongoose.Schema({
+    first_name: String,
+    last_name: String,
+    email: String,
+    phone_number:Number,
+    image: String,
+    pet_type: String
+ });
+ 
 
 
 
