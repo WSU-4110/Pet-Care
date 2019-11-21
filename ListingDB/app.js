@@ -20,7 +20,7 @@ app.set("view engine", "ejs");
 var listingSchema = new mongoose.Schema({
     name: String,
     email: String,
-    phone_number:Number,
+    phone_number: String,
     image: String,
 
  });
@@ -32,7 +32,7 @@ Listing.create(
     {
         name:"Andy Smith",
         email: "andy@yahoo.net",
-        phone_number: 5683787771,
+        phone_number: "5683787771",
         image: "https://www.homeagain.com/static/images/articles/found-pet-tips.jpg"
         
     },
@@ -44,6 +44,10 @@ Listing.create(
          console.log(list);
      }
 });
+
+// **********************************************
+
+
 
 //
 //CREATE - add new campground to DB
@@ -59,8 +63,8 @@ app.post("/listing", function(req, res){
         if(err){
             console.log(err);
         } else {
-            //redirect back to campgrounds page
-            res.redirect("/campgrounds");
+            //redirect back to listing page
+            res.redirect("/listing");
         }
     });
 });
