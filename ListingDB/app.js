@@ -49,16 +49,7 @@ Listing.create(
 
 //CREATE - add new listing to DB
 app.get("/", function(req, res){
-
-    // Create a new campground and save to DB
-    Listing.create({}, function(err, newlyCreated){
-        if(err){
-            console.log(err);
-        } else {
-            //redirect back to listing page
-            res.redirect("/lostAndFound.ejs");
-        }
-    });
+    res.render("lostAndFound");
 });
 
 // *********************************************************
