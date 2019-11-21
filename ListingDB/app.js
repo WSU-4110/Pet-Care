@@ -26,9 +26,9 @@ var listingSchema = new mongoose.Schema({
  });
  
  //modeling an obeject after the schema
- var Listing = mongoose.model("Listing", listingSchema);
+var Listing = mongoose.model("Listing", listingSchema);
 
- Listing.create(
+Listing.create(
     {
         name:"Andy Smith",
         email: "andy@yahoo.net",
@@ -45,6 +45,8 @@ var listingSchema = new mongoose.Schema({
          console.log(list);
      }
    });
+
+
 
 //listhening port for the app
 app.listen(3000,function(){
