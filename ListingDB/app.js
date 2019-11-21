@@ -26,7 +26,8 @@ var listingSchema = new mongoose.Schema({
     pet_type: String
  });
  
-
+ //modeling an obeject after the schema
+ var Listing = mongoose.model("Listing", listingSchema);
 
 
 //listhening port for the app
