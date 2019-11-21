@@ -22,7 +22,7 @@ var listingSchema = new mongoose.Schema({
     email: String,
     phone_number:Number,
     image: String,
-    pet_type: String
+
  });
  
  //modeling an obeject after the schema
@@ -33,8 +33,7 @@ Listing.create(
         name:"Andy Smith",
         email: "andy@yahoo.net",
         phone_number: 5683787771,
-        image: "https://www.homeagain.com/static/images/articles/found-pet-tips.jpg",
-        pet_type:"dog"
+        image: "https://www.homeagain.com/static/images/articles/found-pet-tips.jpg"
         
     },
     function(err, list){
@@ -45,6 +44,27 @@ Listing.create(
          console.log(list);
      }
 });
+
+//
+//CREATE - add new campground to DB
+app.post("/listing", function(req, res){
+    // get data from form and add to campgrounds array
+    var name = req.body.name;
+    var image = req.body.image;
+    var email = req.body.email;
+    var phone_number = req.body.phone_number;
+    var newListing = {name: name, image: image, email:email, phone_number:phone_number}
+    // Create a new campground and save to DB
+    Campground.create(newListing, function(err, newlyCreated){
+        if(err){
+            console.log(err);
+        } else {
+            //redirect back to campgrounds page
+            res.redirect("/campgrounds");
+        }
+    });
+});
+
 
 
 //listhening port for the app
