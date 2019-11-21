@@ -38,3 +38,14 @@ router.post('/register',[
           return value;
       }
   }),
+
+  check('gender','Please select gender')
+    .isLength({ min: 1 }),
+
+    check('dob','Date of birth cannot be left blank')
+    .isLength({ min: 1 }),
+    
+    check('country','Country cannot be left blank')
+    .isLength({ min: 1 }),
+    
+    check('terms','Please accept our terms and conditions').equals('yes'),
