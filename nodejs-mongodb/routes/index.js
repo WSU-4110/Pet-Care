@@ -49,3 +49,16 @@ router.post('/register',[
     .isLength({ min: 1 }),
     
     check('terms','Please accept our terms and conditions').equals('yes'),
+
+    ], function(req, res, next) {
+
+        const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {     
+        
+        res.json({status : "error", message : errors.array()});
+
+    } else {
+
+        hmac = crypto.createHmac("sha1", 'auth secret');
+        var encpassword = '';
