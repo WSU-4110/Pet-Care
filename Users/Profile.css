@@ -1,3 +1,4 @@
+
 html {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
@@ -31,11 +32,11 @@ html {
 .header-class {
     position: fixed;
     height: 100%;
-    width: 15%;
+    width: 18%;
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: linear-gradient(#00bd9d, #3cc059fc);
+    background-image: linear-gradient(#78e08f, rgba(6, 69, 20, 0.99));
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -47,7 +48,7 @@ html {
 
 .main-nav li a {
     text-decoration: none;
-    color: #eff7f6;
+    color: black;
 }
 
 .main-nav li a:hover {
@@ -213,10 +214,3 @@ h2.post{
 .reset-btn:hover{
     background-color: red;
 }
-
-
-/*---------------------------------------------
-            Google Calendar 
-----------------------------------------------*/
-iframe{ margin:0 auto;
-    display: block;}
