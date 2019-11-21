@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+  }
+
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 20px;
+    
+  }
+
+
+/*
+*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  /*
+  Height: 20220%;
+  */
+  }
+.container {
+    padding: 0 20px;
+  }
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .title {
+    color: goldenrod;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(57, 204, 209);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: goldenrod;
+  }
+
+  .Center-Container { 
+    height: 150px;
+    position: relative;
+    border: 3px solid green; 
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+  }
+  .center {
+    text-align: center;
+    border: 3px solid green;
+  }

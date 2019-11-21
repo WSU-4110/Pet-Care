@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- ==============================================
+    CSC 4111
+    
+    PetCare Sprint 1: Homepage
+
+    Author: Santhosh Ahraham
+    ===================================================-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home-page</title>
+
+    <!--Link to other css pages-->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/homepage_style.css">
+</head>
+
+
+<body>
+    <div class="header-class">
+        <header>
+            <!--==========================
+                Navigation Bar
+        ===========================-->
+            <nav class="nav">
+                <ul class="main-nav">
+                    <img src="images/petcare-logo.png" alt="petcare logo">
+                    <li><a href="index.html">Home</a></li><br>
+                    <li><a href="PetParks.html">Pet Parks</a></li><br>
+                    <li><a href="PetVets.html">Pet Vets</a></li><br>
+                    <li><a href="lostAndfound.html">Lost and Found</a></li><br>
+                    <li><a href="stray animal.html">Stray Animals</a></li><br>
+                    <li><a href="eventpage.html">Events</a></li><br>
+                    <li><a href="AboutUs.HTML">About Us</a></li><br>
+                    <li><a href="ContactUs.html">Contact Us</a></li><br>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    <h2 class="post">Pet of the day</h3>
+        <div class="post">
+            <header>
+                <div>
+                    <p style="float: left;"><img src="images/profile.png" width="50px" border="0px"></p>
+                </div>
+            </header>
+            <img src="images/dog-pic.jpg" alt="Dog picture" style="width:40%;">
+            <div class="header">
+
+                <h4>Oscar</h4>
+            </div>
+            <form>
+                
+                <div id="disqus_thread"></div>
+
+<script>
+// DON'T EDIT BELOW THIS LINE
+//SERIOUSLY, DON'T
+//_________________________________________________________________________________________________________________________________
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://petcare-3.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                
+
+
+            </form>
+        </div>
+        <!--====================
+        Section
+    ==================-->
+        <div class="container">
+            <form>
+                <label for="exampleMessage">Create a Post</label>
+                <br><textarea class="u-full-width" placeholder="What's on your mind?" id="exampleMessage"></textarea>
+                <input class="button-primary" type="submit" value="Post">
+            </form>
+        </div>
+
+        <!--==========================
+                footer
+    ===========================-->
+
+        <footer class="footer-class">
+            <ul class="social-icons"> Follow us
+                <li><a href="www.facebokk.com"></a><img src="Images/fb_icon.png" alt="facebook icon"></li>
+                <li><img src="Images/google-plus.png" alt="google plus icon"><a= href="www.google.com"></a></a></li>
+                <li><img src="Images/insta.png" alt="Instragram icon"><a= href= www.instagram.com></a></li>
+                <li><img src="Images/linked-in.png" alt="linked-in icon"><a= href= www.linkedin.com></a></li>
+                <li><img src="Images/twitter.png" alt="Twitter icon"><a= href= www.twitter.com></a></li>
+                <li><img src="Images/youTube.png" alt="YouTube icon"><a= href= www.youtube.com></a></li>
+            </ul>
+        </footer>
+
+</body>
+</html>

@@ -6,24 +6,6 @@
 }
 
 
-
-.header-class {
-    position:absolute;
-    height: 150%;
-    width: 18%;
-    z-index: 1;
-    top: 0;
-    left:0;
-    bottom: 0;
-    background-image: linear-gradient(#78e08f, rgba(6, 69, 20, 0.99));
-    overflow-x: hidden;
-    padding-top: 20px;
-   
-    float: left;
-}
-
-
-
 body {
   padding: 50px 20%;
   background-color: whitesmok;
