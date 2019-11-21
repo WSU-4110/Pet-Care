@@ -47,10 +47,37 @@ Listing.create(
 
 // **********************************************
 
+//CREATE - add new listing to DB
+app.get("/", function(req, res){
+
+    // Create a new campground and save to DB
+    Listing.create(newListing, function(err, newlyCreated){
+        if(err){
+            console.log(err);
+        } else {
+            //redirect back to listing page
+            res.redirect("/lostAndFound");
+        }
+    });
+});
+
+// *********************************************************
+//   listing
+// *********************************************************
+app.get("/listing", function(req, res){
+    // Get all listing from DB
+    Listing.find({}, function(err, allListings){
+       if(err){
+           console.log(err);
+       } else {
+          //change index 
+          res.render("index",{listing:allListings});
+       }
+    });
+});
 
 
-//
-//CREATE - add new campground to DB
+// *********************************************************
 app.post("/listing", function(req, res){
     // get data from form and add to campgrounds array
     var name = req.body.name;
@@ -59,7 +86,7 @@ app.post("/listing", function(req, res){
     var phone_number = req.body.phone_number;
     var newListing = {name: name, image: image, email:email, phone_number:phone_number}
     // Create a new campground and save to DB
-    Campground.create(newListing, function(err, newlyCreated){
+    Listing.create(newListing, function(err, newlyCreated){
         if(err){
             console.log(err);
         } else {
@@ -68,8 +95,7 @@ app.post("/listing", function(req, res){
         }
     });
 });
-
-
+// *********************************************************
 
 //listhening port for the app
 app.listen(3000,function(){
