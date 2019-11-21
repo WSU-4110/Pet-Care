@@ -51,7 +51,7 @@ Listing.create(
 app.get("/", function(req, res){
 
     // Create a new campground and save to DB
-    Listing.create(newListing, function(err, newlyCreated){
+    Listing.create({}, function(err, newlyCreated){
         if(err){
             console.log(err);
         } else {
