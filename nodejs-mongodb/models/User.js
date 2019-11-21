@@ -20,4 +20,15 @@ var userSchema = new Schema({
            match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address'],
       index: {unique: true, dropDups: true}
       },
-      
+
+    password: { type: String , required: [true,  'Password cannot be left blank']},
+
+    dob: { type: Date , required: [true, 'Date of birth must be provided']},
+
+    country: { type: String , required: [true, 'Country cannot be left blank.']},
+
+    gender: { type: String , required: [true, 'Gender must be provided']},
+    
+});
+    
+    module.exports = mongoose.model('Users', userSchema);
