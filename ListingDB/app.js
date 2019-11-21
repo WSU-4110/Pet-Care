@@ -56,7 +56,7 @@ app.get("/", function(req, res){
             console.log(err);
         } else {
             //redirect back to listing page
-            res.redirect("/lostAndFound");
+            res.redirect("/lostAndFound.ejs");
         }
     });
 });
@@ -96,8 +96,9 @@ app.post("/listing", function(req, res){
     });
 });
 
+
 // *********************************************************
-//listhening port for the app
+//  listhening port for the app
 // *********************************************************
 app.listen(3000,function(){
     console.log("Server has started on port 3000");
