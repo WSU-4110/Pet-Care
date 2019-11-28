@@ -1,0 +1,114 @@
+<!-- ==============================================
+    CSC 4111
+    
+    PetCare Sprint 1: lost and found
+
+    Author: Omar Faruq
+    ===================================================-->
+
+<!DOCTYPE html>    
+
+<html>
+    <head>
+        <title>Lost and found</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="author" content="Omar Faruq" />
+        <meta name="description" content="Pet Parks" />
+        <meta http-equiv="Expires" content="-1">
+    
+        <!-- Linking the javascipt file -->
+        
+
+
+        <!-- Link to other pages -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+    </head>
+
+    <body>
+            <!--==========================
+                            Header
+                ===========================-->
+            <div class="header-class">
+                        <header>
+                            <img src="../Images/petcare-logo.png" alt="petcare logo">
+                            <!--==========================
+                                Navigation Bar
+                        ===========================-->
+                            <nav class="nav">
+                                <ul class="main-nav">
+                                    <li><a href="../index.html">Home</a></li><br>
+                                    <li><a href="../PetParks.html">Pet Parks</a></li><br>
+                                    <li><a href="../PetVets.html">Pet Vets</a></li><br>
+                                    <li><a href="../lostAndfound.html">Lost and Found</a></li><br>
+                                    <li><a href="../ContactUs.HTML">Contact Us</a></li><br>
+                                </ul>
+                            </nav>                
+                        </header>
+                    </div>
+                
+                    <!--===================
+                        Section 
+                    ==========================-->
+                    <div class="contents">
+                        <h2 class="tittle-header">Lost And Found</h2>
+                    
+                        <!--===================
+                        User Form
+                    ==========================-->
+                        <form method="POST" action="/listing">
+                
+                            <label class="level-design">First Name:</label>
+                            <input class="input-class" type="text" name="Fname">
+                            <br><br>
+
+                            <label class="level-design">Last Name:</label>
+                            <input class="input-class" type="text" name="Lname">
+                            <br><br>
+               
+                            <label class="level-design">Your Email:</label>
+                            <input class="input-class"  type="email" name="email">
+                            <br><br>
+                
+                            <!-- ***************************
+                                    Phone Number 
+                            ********************************-->
+                            <label class="level-design">Your Phone Number:</label>
+                            <input class="input-class" id="numb" type="number" name="phone_number">
+                            <button onclick="myFunction()">submit</button>
+                            <br><br>
+            
+                            <label class="level-design">Picture of Your Pet: </label>
+                            <input class="input-class" type="text" name="image" placeholder="ENTER URL">
+                            <br><br>
+                
+                            <div class="btn">
+                                <input class="submit-btn" type="submit" value="Submit">
+                                <input class="reset-btn" type="reset" value="Reset">
+                                <br><br>
+                            </div>
+                        </form>
+            </div>
+        <script>
+            function myFunction() {
+                var x,
+                    text;
+
+                // Get the value of the input field with id="numb"
+                x = document
+                    .getElementById("numb")
+                    .value;
+
+                // If x is Not a Number or less than one or greater than 10
+                if (isNaN(x) || x < 1 || x > 10) {
+                    text = "Input not valid";
+                } else {
+                    text = "Input OK";
+                }
+                document
+                    .getElementById("demo")
+                    .innerHTML = text;
+            }
+        </script>
+    </body>
+</html>
