@@ -17,7 +17,7 @@
         <meta http-equiv="Expires" content="-1">
     
         <!-- Linking the javascipt file -->
-        
+        <script defer src="index.js"></script>                
 
 
         <!-- Link to other pages -->
@@ -56,30 +56,32 @@
                         <!--===================
                         User Form
                     ==========================-->
-                        <form method="POST" action="/listing">
+                        <form id="form">
                 
-                            <label class="level-design">First Name:</label>
-                            <input class="input-class" type="text" name="Fname">
+                            <!-- First Name -->
+                            <label class="level-design" for="Fname">First Name:</label>
+                            <input class="input-class" type="text" name="Fname" id="Fname">
                             <br><br>
 
-                            <label class="level-design">Last Name:</label>
-                            <input class="input-class" type="text" name="Lname">
+                            <!-- Last name -->
+                            <label class="level-design" for="Lname">Last Name:</label>
+                            <input class="input-class" type="text" name="Lname" id="Lname">
                             <br><br>
                
-                            <label class="level-design">Your Email:</label>
-                            <input class="input-class"  type="email" name="email">
+                            <!-- email -->
+                            <label class="level-design" for="email">Your Email:</label>
+                            <input class="input-class"  type="email" name="email" id="email">
                             <br><br>
-                
+
+                            <!-- Age -->
+                            <label class="level-design" for="age">age:</label>
+                            <input class="input-class" type="number" name="age" id="age">
+                            <br><br>
                             <!-- ***************************
                                     Phone Number 
                             ********************************-->
-                            <label class="level-design">Your Phone Number:</label>
-                            <input class="input-class" id="numb" type="number" name="phone_number">
-                            <button onclick="myFunction()">submit</button>
-                            <br><br>
-            
-                            <label class="level-design">Picture of Your Pet: </label>
-                            <input class="input-class" type="text" name="image" placeholder="ENTER URL">
+                            <label class="level-design" for="phone_number">Your Phone Number:</label>
+                            <input class="input-class" id="phone_number" type="number" name="phone_number">
                             <br><br>
                 
                             <div class="btn">
@@ -89,26 +91,5 @@
                             </div>
                         </form>
             </div>
-        <script>
-            function myFunction() {
-                var x,
-                    text;
-
-                // Get the value of the input field with id="numb"
-                x = document
-                    .getElementById("numb")
-                    .value;
-
-                // If x is Not a Number or less than one or greater than 10
-                if (isNaN(x) || x < 1 || x > 10) {
-                    text = "Input not valid";
-                } else {
-                    text = "Input OK";
-                }
-                document
-                    .getElementById("demo")
-                    .innerHTML = text;
-            }
-        </script>
     </body>
 </html>

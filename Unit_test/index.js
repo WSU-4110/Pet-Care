@@ -1,16 +1,13 @@
+// main javascript file for Unit testing
+// Validating html form using unit testing and javascript
 
-function myFunction() {
-    var x, text;
-  
-    // Get the value of the input field with id="numb"
-    x = document.getElementById("numb").value;
-  
-    // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x < 1 || x > 10) {
-      text = "Input not valid";
-    } 
-    else {
-      text = "Input OK";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
+const first_name    = document.getElementById('Fname');
+const last_name     = document.getElementById('Lname');
+const email         = document.getElementById('email');
+const age           = document.getElementById('age');
+const phone_number  = document.getElementById('phone_number');
+
+//for form
+const form = document.getElementById('form');
+
+
