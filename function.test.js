@@ -2,27 +2,12 @@
 
 const functions= require('./functions');
 
- beforeEach(() => initDatabase());
- afterEach(() => closeDatabase());
- beforeAll(() => initDatabase());
- afterAll(() => closeDatabase());
-
- const initDatabase = () => console.log('Database Initialized...');
- const closeDatabase = () => console.log('Database Closed...');
-const nameCheck = () => console.log('Checking Name....');
-describe('Checking Names', () => {
-  beforeEach(() => nameCheck());
-
-  test('User is Jeff', () => {
-    const user = 'Jeff';
-    expect(user).toBe('Jeff');
-  });
-
-  test('User is Karen', () => {
-    const user = 'Karen';
-    expect(user).toBe('Karen');
-  });
+test('user first and last name Should be under 50 character', () => {
+  const firstname_length = 25;
+  const lastname_length = 25;
+  expect(firstname_length + lastname_length).toBeLessThanOrEqual(50);
 });
+
 
 
 
