@@ -35,6 +35,12 @@
         }
     };
 
+    module.exports = Home;
+    module.exports = PetParks;
+    module.exports = PetVets;
+    module.exports = lostAndfound;
+    module.exports = StrayAnimals;
     module.exports = Events;
+    
     
 
