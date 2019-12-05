@@ -64,13 +64,13 @@
                 <!-- *****************************
                     Random picture of the day
                     ********************************* -->
-                <input type="button" onClick="displayImg()" value="Display Random Image">
+                <input type="button" onClick="displayImg()" value="Previous Pet of the Day">
                 <img src="/Images/" name="canvas" style="width:200px"/>
 
 
                 <script>
 
-                    var imgArr = ["Images/pet-park-1.jpg","Images/pet-park-2.jpg"];
+                    var imgArr = ["Images/pet-park-1.jpg","Images/pet-park-2.jpg", "Images/pet-park-3jpg.jpg","Images/pet-park-4.jpg", "Images/pet-park-5.jpg"];
 
                     function displayImg(){
                         var num = Math.floor(Math.random() * (imgArr.length));
