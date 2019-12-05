@@ -53,11 +53,30 @@
                     <p style="float: left;"><img src="images/profile.png" width="50px" border="0px"></p>
                 </div>
             </header>
-            <img src="images/pet-park-5.jpg" alt="Dog picture" style="width:90%;">
-            <div class="header">
+          
+                    <!-- **********
+                        Javascript for random picture
+                        ******** -->
 
-                <h4>Jack</h4>
-            </div>
+                    <script>
+    
+                            var imgArr = ["Images/pet-park-1.jpg","Images/pet-park-2.jpg", "Images/pet-park-3jpg.jpg","Images/pet-park-4.jpg", "Images/pet-park-5.jpg"];
+        
+                            function displayImg(){
+                                var num = Math.floor(Math.random() * (imgArr.length));
+                                document.canvas.src= imgArr[num];
+                            }
+                        
+                    </script>
+
+                    <!-- *****************************
+                    Random picture of the day
+                    ********************************* -->
+                
+                <img src="/Images/" name="canvas" style="width:90%"/>
+                <input type="button" onClick="displayImg()" value="Previous Pet of the Day">
+
+
             <form>
                 
                 <div id="disqus_thread"></div>
