@@ -60,6 +60,25 @@
                 
                 <div id="disqus_thread"></div>
 
+
+                <!-- *****************************
+                    Random picture of the day
+                    ********************************* -->
+                <input type="button" onClick="displayImg()" value="Display Random Image">
+                <img src="/Images/" name="canvas" style="width:200px"/>
+
+
+                <script>
+
+                    var imgArr = ["Images/pet-park-1.jpg","Images/pet-park-2.jpg"];
+
+                    function displayImg(){
+                        var num = Math.floor(Math.random() * (imgArr.length));
+                        document.canvas.src= imgArr[num];
+                    }
+                
+                </script>
+
 <script>
 // DON'T EDIT BELOW THIS LINE
 //SERIOUSLY, DON'T
