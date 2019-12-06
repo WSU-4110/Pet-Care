@@ -1,23 +1,9 @@
 language: node_js
-
 node_js:
-  - 'lts/*'
-
-branches:
-  only:
-    - master
-
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH="$HOME/.yarn/bin:$PATH"
-
-install: yarn install-no-ts-build
-
-cache:
-  yarn: true
-  directories:
-    - '.eslintcache'
-    - 'node_modules'
-
+  - stable
+install:
+  - npm install
 script:
-  - yarn run test-ci-partial
+  - npm run test -- --coverage
+after_script:
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
