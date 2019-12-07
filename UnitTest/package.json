@@ -4,7 +4,9 @@
   "description": "app for testing",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "echo 'build script executed'"
+
   },
   "author": "",
   "license": "ISC",
