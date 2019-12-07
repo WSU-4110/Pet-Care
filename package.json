@@ -1,20 +1,16 @@
 {
-  "name": "function.js",
+  "name": "functions.js",
   "version": "1.0.0",
-  "description": "app for testing",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "echo 'build script executed'"
-
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "jest": "^24.9.0",
-    "mocha": "^6.2.2"
-  },
-  "dependencies": {},
-  "keywords": []
+    "jest": "^24.9.0"
+  }
 }
