@@ -8,7 +8,9 @@
     "jest": "^24.9.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "echo 'build script executed'"
+
   },
   "keywords": [],
   "author": "",
