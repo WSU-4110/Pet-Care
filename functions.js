@@ -1,46 +1,29 @@
-    const Home = {
-        Label : 'Home',
-        getHomeLabel: function(){
-            return 'Home';
-        }
-    };
-    const PetParks = {
-        Label : 'Pet Parks',
-        getPetParksLabel: function(){
-            return 'Pet Parks';
-        }
-    };
-    const PetVets = {
-        Label : 'PetVets',
-        getPetVetsLabel: function(){
-            return 'PetVets';
-        }
-    };
-    const lostAndfound = {
-        Label : 'Lost And Found',
-        getlostAndfoundLabel: function(){
-            return 'Lost And Found';
-        } 
-    };
-    const StrayAnimals = {
-        Label : 'Stray Animal',
-        getStrayAnimalsLabel: function(){
-            return 'Stray Animal';
-        }
-    };
-    const Events = {
-        Label : 'Events',
-        getEventsLabel: function(){
-            return 'Events';
-        }
-    };
+const Laith = {
+   
+    firstName: 'Laith',
+    lastName: 'Rafidi',
+    fullName: this.firstName + ' ' + this.lastName,
+    title: 'Co-Owner',
+  
+    getFullName: function(){
+        return 'Laith Rafidi';
+    },
+    getDescription: function(){
+        return 'Laith is a passionate software engineer. His favorite pet is Oscar from Pet of the Day!';
+    },
+    getTitle: function(){
+        return 'Software Engineer';
+    },
+    getAge: function(){
+        return 21;
+    },
+    getNationality: function(){
+        return 'Palestinian';
+    },
 
-    module.exports = Home;
-    module.exports = PetParks;
-    module.exports = PetVets;
-    module.exports = lostAndfound;
-    module.exports = StrayAnimals;
-    module.exports = Events;
-    
-    
+    getUniversity: function(){
+        return 'Wayne State University';
+    }
+};
 
+module.exports = Laith;

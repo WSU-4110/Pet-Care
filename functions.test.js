@@ -1,35 +1,32 @@
-const Home = require('./functions');
-const PetParks = require('./functions');
-const PetVets = require('./functions');
-const lostAndfound = require('./functions');
-const StrayAnimals = require('./functions');
-const Events = require('./functions');
+const Laith = require('./functions');
 
-
-
-test('Returning Home label',() =>{
-    expect(Home.getHomeLabel()).toEqual('Home');
+//get full name
+test('Testing function 01', () => {
+    expect(Laith.getFullName()).toEqual('Laith Rafidi');
 });
 
-test('Returning Pet Parks label',() =>{
-    expect(PetParks.getPetParksLabel()).toEqual('Pet Parks');
+//get title
+test('Testing function 02', () => {
+    expect(Laith.getTitle()).toEqual('Software Engineer');
 });
 
-test('Returning PetVets label',() =>{
-    expect(PetVets.getPetVetsLabel()).toEqual('PetVets');
+//get description
+test('Testing function 03', () => {
+    expect(Laith.getDescription()).toEqual('Laith is a passionate software engineer. His favorite pet is Oscar from Pet of the Day!');
 });
 
-test('Returning lost And found label',() =>{
-    expect(lostAndfound.getlostAndfoundLabel()).toEqual('Lost And Found');
+//get age
+test('Testing function 04', () => {
+    expect(Laith.getAge()).toEqual(21);
 });
 
-test('Returning StrayAnimals label',() =>{
-    expect(StrayAnimals.getStrayAnimalsLabel()).toEqual('Stray Animal');
+//get nationality
+test('Testing function 05', () => {
+    expect(Laith.getNationality()).toEqual('Palestinian');
 });
 
-test('Returning Events label',() =>{
-    expect(Events.getEventsLabel()).toEqual('Events');
+//get university
+test('Testing function 06', () => {
+    expect(Laith.getUniversity()).toEqual('Wayne State University');
 });
-
-
 
