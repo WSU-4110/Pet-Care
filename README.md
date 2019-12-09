@@ -1,4 +1,5 @@
 # Pet-Care
+[![Build Status](https://travis-ci.org/WSU-4110/Pet-Care.svg?branch=master)](https://travis-ci.org/WSU-4110/Pet-Care)
 ![Logo](https://user-images.githubusercontent.com/33672419/69312841-09aaab00-0bfe-11ea-9f1c-efc5a13e8787.png)
 ## Social media website for pet owners.
 ### Functionally 
